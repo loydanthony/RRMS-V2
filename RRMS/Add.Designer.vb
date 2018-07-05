@@ -26,20 +26,20 @@ Partial Class Add
         Me.RichTextBox_b_title = New System.Windows.Forms.RichTextBox()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton3 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox_categ = New System.Windows.Forms.TextBox()
         Me.btn_submit = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btn_add = New System.Windows.Forms.Button()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
@@ -84,23 +84,12 @@ Partial Class Add
         Me.GroupBox1.Controls.Add(Me.RadioButton2)
         Me.GroupBox1.Controls.Add(Me.RadioButton1)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(392, 80)
+        Me.GroupBox1.Location = New System.Drawing.Point(392, 66)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(149, 121)
         Me.GroupBox1.TabIndex = 5
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Status"
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(6, 57)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(107, 22)
-        Me.RadioButton2.TabIndex = 5
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Unpublished"
-        Me.RadioButton2.UseVisualStyleBackColor = True
         '
         'RadioButton3
         '
@@ -112,6 +101,17 @@ Partial Class Add
         Me.RadioButton3.TabStop = True
         Me.RadioButton3.Text = "On going"
         Me.RadioButton3.UseVisualStyleBackColor = True
+        '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Location = New System.Drawing.Point(6, 57)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(107, 22)
+        Me.RadioButton2.TabIndex = 5
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "Unpublished"
+        Me.RadioButton2.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -152,15 +152,41 @@ Partial Class Add
         Me.GroupBox2.Controls.Add(Me.Label1)
         Me.GroupBox2.Location = New System.Drawing.Point(22, 12)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(617, 251)
+        Me.GroupBox2.Size = New System.Drawing.Size(617, 223)
         Me.GroupBox2.TabIndex = 11
         Me.GroupBox2.TabStop = False
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(392, 28)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 16
+        Me.Button1.Text = "Open"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(97, 28)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(281, 20)
+        Me.TextBox1.TabIndex = 15
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(19, 27)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(44, 18)
+        Me.Label3.TabIndex = 14
+        Me.Label3.Text = "Book"
         '
         'GroupBox3
         '
         Me.GroupBox3.Controls.Add(Me.DataGridView1)
         Me.GroupBox3.Controls.Add(Me.Panel1)
-        Me.GroupBox3.Location = New System.Drawing.Point(22, 281)
+        Me.GroupBox3.Location = New System.Drawing.Point(22, 252)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(485, 190)
         Me.GroupBox3.TabIndex = 13
@@ -204,32 +230,6 @@ Partial Class Add
         Me.btn_add.TabIndex = 0
         Me.btn_add.Text = "Add"
         Me.btn_add.UseVisualStyleBackColor = True
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(19, 27)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(44, 18)
-        Me.Label3.TabIndex = 14
-        Me.Label3.Text = "Book"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(97, 28)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(281, 20)
-        Me.TextBox1.TabIndex = 15
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(392, 28)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 16
-        Me.Button1.Text = "Open"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '

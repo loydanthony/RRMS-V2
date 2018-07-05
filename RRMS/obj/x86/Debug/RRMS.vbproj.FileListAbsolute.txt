@@ -23,3 +23,17 @@ F:\cloning\RRMS\RRMS\obj\x86\Debug\RRMS.Book.resources
 F:\cloning\RRMS\RRMS\obj\x86\Debug\RRMS.Resources.resources
 F:\cloning\RRMS\RRMS\obj\x86\Debug\RRMS.vbproj.GenerateResource.Cache
 F:\cloning\RRMS\RRMS\obj\x86\Debug\RRMS.Add.resources
+D:\My Computer Documents\Documents\GitHub\RRMS-V2\RRMS\obj\x86\Debug\RRMS.exe
+D:\My Computer Documents\Documents\GitHub\RRMS-V2\RRMS\obj\x86\Debug\RRMS.xml
+D:\My Computer Documents\Documents\GitHub\RRMS-V2\RRMS\obj\x86\Debug\RRMS.pdb
+D:\My Computer Documents\Documents\GitHub\RRMS-V2\RRMS\bin\Debug\RRMS.exe
+D:\My Computer Documents\Documents\GitHub\RRMS-V2\RRMS\bin\Debug\RRMS.pdb
+D:\My Computer Documents\Documents\GitHub\RRMS-V2\RRMS\bin\Debug\RRMS.xml
+D:\My Computer Documents\Documents\GitHub\RRMS-V2\RRMS\bin\Debug\MetroFramework.dll
+D:\My Computer Documents\Documents\GitHub\RRMS-V2\RRMS\bin\Debug\MetroFramework.Fonts.dll
+D:\My Computer Documents\Documents\GitHub\RRMS-V2\RRMS\obj\x86\Debug\RRMS.vbprojResolveAssemblyReference.cache
+D:\My Computer Documents\Documents\GitHub\RRMS-V2\RRMS\obj\x86\Debug\RRMS.Add.resources
+D:\My Computer Documents\Documents\GitHub\RRMS-V2\RRMS\obj\x86\Debug\RRMS.Menu.resources
+D:\My Computer Documents\Documents\GitHub\RRMS-V2\RRMS\obj\x86\Debug\RRMS.Book.resources
+D:\My Computer Documents\Documents\GitHub\RRMS-V2\RRMS\obj\x86\Debug\RRMS.Resources.resources
+D:\My Computer Documents\Documents\GitHub\RRMS-V2\RRMS\obj\x86\Debug\RRMS.vbproj.GenerateResource.Cache
