@@ -1,0 +1,25 @@
+d:\my computer documents\documents\visual studio 2010\Projects\RRMS\RRMS\bin\Debug\RRMS.exe
+d:\my computer documents\documents\visual studio 2010\Projects\RRMS\RRMS\bin\Debug\RRMS.pdb
+d:\my computer documents\documents\visual studio 2010\Projects\RRMS\RRMS\bin\Debug\RRMS.xml
+d:\my computer documents\documents\visual studio 2010\Projects\RRMS\RRMS\bin\Debug\MetroFramework.dll
+d:\my computer documents\documents\visual studio 2010\Projects\RRMS\RRMS\bin\Debug\MetroFramework.Fonts.dll
+d:\my computer documents\documents\visual studio 2010\Projects\RRMS\RRMS\obj\x86\Debug\RRMS.Resources.resources
+d:\my computer documents\documents\visual studio 2010\Projects\RRMS\RRMS\obj\x86\Debug\RRMS.vbproj.GenerateResource.Cache
+d:\my computer documents\documents\visual studio 2010\Projects\RRMS\RRMS\obj\x86\Debug\RRMS.exe
+d:\my computer documents\documents\visual studio 2010\Projects\RRMS\RRMS\obj\x86\Debug\RRMS.xml
+d:\my computer documents\documents\visual studio 2010\Projects\RRMS\RRMS\obj\x86\Debug\RRMS.pdb
+d:\my computer documents\documents\visual studio 2010\Projects\RRMS\RRMS\obj\x86\Debug\RRMS.Menu.resources
+D:\My Computer Documents\Documents\Visual Studio 2010\Projects\RRMS\RRMS\obj\x86\Debug\RRMS.vbprojResolveAssemblyReference.cache
+D:\My Computer Documents\Documents\Visual Studio 2010\Projects\RRMS\RRMS\obj\x86\Debug\RRMS.Book.resources
+F:\cloning\RRMS\RRMS\obj\x86\Debug\RRMS.exe
+F:\cloning\RRMS\RRMS\obj\x86\Debug\RRMS.xml
+F:\cloning\RRMS\RRMS\obj\x86\Debug\RRMS.pdb
+F:\cloning\RRMS\RRMS\bin\Debug\RRMS.exe
+F:\cloning\RRMS\RRMS\bin\Debug\RRMS.pdb
+F:\cloning\RRMS\RRMS\bin\Debug\RRMS.xml
+F:\cloning\RRMS\RRMS\obj\x86\Debug\RRMS.vbprojResolveAssemblyReference.cache
+F:\cloning\RRMS\RRMS\obj\x86\Debug\RRMS.Menu.resources
+F:\cloning\RRMS\RRMS\obj\x86\Debug\RRMS.Book.resources
+F:\cloning\RRMS\RRMS\obj\x86\Debug\RRMS.Resources.resources
+F:\cloning\RRMS\RRMS\obj\x86\Debug\RRMS.vbproj.GenerateResource.Cache
+F:\cloning\RRMS\RRMS\obj\x86\Debug\RRMS.Add.resources
