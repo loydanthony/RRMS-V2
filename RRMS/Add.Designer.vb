@@ -37,11 +37,11 @@ Partial Class Add
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btn_add = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -132,13 +132,14 @@ Partial Class Add
         '
         'btn_submit
         '
+        Me.btn_submit.BackColor = System.Drawing.Color.LightSteelBlue
         Me.btn_submit.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_submit.Location = New System.Drawing.Point(547, 424)
         Me.btn_submit.Name = "btn_submit"
         Me.btn_submit.Size = New System.Drawing.Size(93, 40)
         Me.btn_submit.TabIndex = 10
         Me.btn_submit.Text = "Submit"
-        Me.btn_submit.UseVisualStyleBackColor = True
+        Me.btn_submit.UseVisualStyleBackColor = False
         '
         'GroupBox2
         '
@@ -158,12 +159,13 @@ Partial Class Add
         '
         'Button1
         '
+        Me.Button1.BackColor = System.Drawing.Color.LightSteelBlue
         Me.Button1.Location = New System.Drawing.Point(525, 27)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 16
         Me.Button1.Text = "Open"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'TextBox1
         '
@@ -206,6 +208,11 @@ Partial Class Add
         Me.DataGridView1.Size = New System.Drawing.Size(479, 129)
         Me.DataGridView1.TabIndex = 0
         '
+        'Column1
+        '
+        Me.Column1.HeaderText = "                                                               Name"
+        Me.Column1.Name = "Column1"
+        '
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.btn_add)
@@ -219,42 +226,41 @@ Partial Class Add
         '
         Me.btn_add.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btn_add.BackColor = System.Drawing.Color.LightSteelBlue
         Me.btn_add.Location = New System.Drawing.Point(389, 10)
         Me.btn_add.Name = "btn_add"
         Me.btn_add.Size = New System.Drawing.Size(75, 23)
         Me.btn_add.TabIndex = 0
         Me.btn_add.Text = "Add"
-        Me.btn_add.UseVisualStyleBackColor = True
+        Me.btn_add.UseVisualStyleBackColor = False
         '
         'Button2
         '
+        Me.Button2.BackColor = System.Drawing.Color.LightSteelBlue
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Location = New System.Drawing.Point(547, 318)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(93, 40)
         Me.Button2.TabIndex = 14
         Me.Button2.Text = "Cancel"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Button3
         '
+        Me.Button3.BackColor = System.Drawing.Color.LightSteelBlue
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Location = New System.Drawing.Point(547, 372)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(93, 40)
         Me.Button3.TabIndex = 15
         Me.Button3.Text = "Clear"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "                                                               Name"
-        Me.Column1.Name = "Column1"
+        Me.Button3.UseVisualStyleBackColor = False
         '
         'Add
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.DarkGray
         Me.ClientSize = New System.Drawing.Size(665, 491)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
