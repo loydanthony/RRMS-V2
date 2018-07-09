@@ -26,8 +26,8 @@ Partial Class Book
         Me.Panel_WA = New System.Windows.Forms.Panel()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ToolStripDropDownButton2 = New System.Windows.Forms.ToolStripDropDownButton()
         Me.AddNewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
@@ -42,8 +42,8 @@ Partial Class Book
         Me.Panel_WA.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel_WA
@@ -76,6 +76,17 @@ Partial Class Book
         Me.Panel1.Size = New System.Drawing.Size(714, 43)
         Me.Panel1.TabIndex = 2
         '
+        'ToolStrip1
+        '
+        Me.ToolStrip1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(32, 32)
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripDropDownButton2, Me.ToolStripDropDownButton1})
+        Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStrip1.Name = "ToolStrip1"
+        Me.ToolStrip1.Size = New System.Drawing.Size(714, 43)
+        Me.ToolStrip1.TabIndex = 0
+        Me.ToolStrip1.Text = "ToolStrip1"
+        '
         'PictureBox1
         '
         Me.PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -88,26 +99,16 @@ Partial Class Book
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
-        'ToolStrip1
-        '
-        Me.ToolStrip1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(32, 32)
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripDropDownButton2, Me.ToolStripDropDownButton1})
-        Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(714, 43)
-        Me.ToolStrip1.TabIndex = 0
-        Me.ToolStrip1.Text = "ToolStrip1"
-        '
         'ToolStripDropDownButton2
         '
-        Me.ToolStripDropDownButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripDropDownButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ToolStripDropDownButton2.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddNewToolStripMenuItem, Me.ToolStripSeparator2, Me.ExportToolStripMenuItem, Me.PrintToolStripMenuItem, Me.ToolStripSeparator3, Me.DownloadToolStripMenuItem})
         Me.ToolStripDropDownButton2.Image = CType(resources.GetObject("ToolStripDropDownButton2.Image"), System.Drawing.Image)
         Me.ToolStripDropDownButton2.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripDropDownButton2.Name = "ToolStripDropDownButton2"
-        Me.ToolStripDropDownButton2.Size = New System.Drawing.Size(45, 40)
+        Me.ToolStripDropDownButton2.Size = New System.Drawing.Size(51, 40)
         Me.ToolStripDropDownButton2.Text = "Menu"
+        Me.ToolStripDropDownButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'AddNewToolStripMenuItem
         '
@@ -146,13 +147,14 @@ Partial Class Book
         '
         'ToolStripDropDownButton1
         '
-        Me.ToolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripDropDownButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ToolStripDropDownButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BookDetailsToolStripMenuItem, Me.ToolStripSeparator1, Me.SubmitRevisionToolStripMenuItem})
         Me.ToolStripDropDownButton1.Image = CType(resources.GetObject("ToolStripDropDownButton1.Image"), System.Drawing.Image)
         Me.ToolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripDropDownButton1.Name = "ToolStripDropDownButton1"
         Me.ToolStripDropDownButton1.Size = New System.Drawing.Size(45, 40)
-        Me.ToolStripDropDownButton1.Text = "ToolStripDropDownButton1"
+        Me.ToolStripDropDownButton1.Text = "View"
+        Me.ToolStripDropDownButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'BookDetailsToolStripMenuItem
         '
@@ -177,16 +179,16 @@ Partial Class Book
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(714, 439)
         Me.Controls.Add(Me.Panel_WA)
-        Me.MaximizeBox = False
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Book"
         Me.Text = "book"
         Me.Panel_WA.ResumeLayout(False)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

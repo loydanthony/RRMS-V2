@@ -22,6 +22,7 @@ Partial Class Add
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Add))
         Me.b_id = New System.Windows.Forms.Label()
         Me.RichTextBox_b_title = New System.Windows.Forms.RichTextBox()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
@@ -268,6 +269,7 @@ Partial Class Add
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox3)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "Add"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
