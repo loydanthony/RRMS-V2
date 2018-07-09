@@ -267,6 +267,7 @@ Partial Class Add
         Me.Controls.Add(Me.btn_submit)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox3)
+        Me.MaximizeBox = False
         Me.Name = "Add"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Add Book"

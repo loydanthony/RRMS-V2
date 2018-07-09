@@ -48,3 +48,4 @@ F:\cloning\RRMS-V2\RRMS\obj\x86\Debug\RRMS.Menu.resources
 F:\cloning\RRMS-V2\RRMS\obj\x86\Debug\RRMS.Book.resources
 F:\cloning\RRMS-V2\RRMS\obj\x86\Debug\RRMS.Resources.resources
 F:\cloning\RRMS-V2\RRMS\obj\x86\Debug\RRMS.vbproj.GenerateResource.Cache
+F:\cloning\RRMS-V2\RRMS\obj\x86\Debug\RRMS.vbprojResolveAssemblyReference.cache
