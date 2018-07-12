@@ -1,4 +1,5 @@
 ﻿Public Class Add
+    Dim addAut As AddAuthors
 
     Private Sub Add_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -9,7 +10,8 @@
     End Sub
 
     Private Sub btn_add_Click(sender As Object, e As EventArgs) Handles btn_add.Click
-
+        addAut = New AddAuthors(Me)
+        addAut.ShowDialog()
     End Sub
 
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
