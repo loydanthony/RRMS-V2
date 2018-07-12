@@ -21,4 +21,15 @@
     End Sub
 
 
+    Private Sub RichTextBox_b_title_TextChanged(sender As Object, e As EventArgs) Handles RichTextBox_b_title.TextChanged
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+    End Sub
+
+    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+
+    End Sub
 End Class

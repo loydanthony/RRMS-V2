@@ -87,6 +87,12 @@
     <Compile Include="Add.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AddAuthors.Designer.vb">
+      <DependentUpon>AddAuthors.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddAuthors.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Menu.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Add.resx">
       <DependentUpon>Add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAuthors.resx">
+      <DependentUpon>AddAuthors.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.vb</DependentUpon>
