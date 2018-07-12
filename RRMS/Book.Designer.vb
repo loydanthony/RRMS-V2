@@ -26,8 +26,8 @@ Partial Class Book
         Me.Panel_WA = New System.Windows.Forms.Panel()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripDropDownButton2 = New System.Windows.Forms.ToolStripDropDownButton()
         Me.AddNewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
@@ -37,13 +37,14 @@ Partial Class Book
         Me.DownloadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripDropDownButton1 = New System.Windows.Forms.ToolStripDropDownButton()
         Me.BookDetailsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.SubmitRevisionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.SubmitRevisionToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel_WA.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
-        Me.ToolStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel_WA
@@ -76,17 +77,6 @@ Partial Class Book
         Me.Panel1.Size = New System.Drawing.Size(714, 43)
         Me.Panel1.TabIndex = 2
         '
-        'ToolStrip1
-        '
-        Me.ToolStrip1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(32, 32)
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripDropDownButton2, Me.ToolStripDropDownButton1})
-        Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(714, 43)
-        Me.ToolStrip1.TabIndex = 0
-        Me.ToolStrip1.Text = "ToolStrip1"
-        '
         'PictureBox1
         '
         Me.PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -99,6 +89,17 @@ Partial Class Book
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
+        'ToolStrip1
+        '
+        Me.ToolStrip1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(32, 32)
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripDropDownButton2, Me.ToolStripDropDownButton1})
+        Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStrip1.Name = "ToolStrip1"
+        Me.ToolStrip1.Size = New System.Drawing.Size(714, 43)
+        Me.ToolStrip1.TabIndex = 0
+        Me.ToolStrip1.Text = "ToolStrip1"
+        '
         'ToolStripDropDownButton2
         '
         Me.ToolStripDropDownButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
@@ -106,72 +107,78 @@ Partial Class Book
         Me.ToolStripDropDownButton2.Image = CType(resources.GetObject("ToolStripDropDownButton2.Image"), System.Drawing.Image)
         Me.ToolStripDropDownButton2.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripDropDownButton2.Name = "ToolStripDropDownButton2"
-        Me.ToolStripDropDownButton2.Size = New System.Drawing.Size(51, 40)
-        Me.ToolStripDropDownButton2.Text = "Menu"
+        Me.ToolStripDropDownButton2.Size = New System.Drawing.Size(45, 40)
+        Me.ToolStripDropDownButton2.Text = "File"
         Me.ToolStripDropDownButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'AddNewToolStripMenuItem
         '
         Me.AddNewToolStripMenuItem.Name = "AddNewToolStripMenuItem"
-        Me.AddNewToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.AddNewToolStripMenuItem.Text = "Add New"
+        Me.AddNewToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
+        Me.AddNewToolStripMenuItem.Text = "New Document"
         Me.AddNewToolStripMenuItem.ToolTipText = "Add New"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(154, 6)
         '
         'ExportToolStripMenuItem
         '
         Me.ExportToolStripMenuItem.Name = "ExportToolStripMenuItem"
-        Me.ExportToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExportToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
         Me.ExportToolStripMenuItem.Text = "Export List"
         '
         'PrintToolStripMenuItem
         '
         Me.PrintToolStripMenuItem.Name = "PrintToolStripMenuItem"
-        Me.PrintToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.PrintToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
         Me.PrintToolStripMenuItem.Text = "Print Book"
         '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(154, 6)
         '
         'DownloadToolStripMenuItem
         '
         Me.DownloadToolStripMenuItem.Name = "DownloadToolStripMenuItem"
-        Me.DownloadToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.DownloadToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
         Me.DownloadToolStripMenuItem.Text = "Download"
         '
         'ToolStripDropDownButton1
         '
         Me.ToolStripDropDownButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ToolStripDropDownButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BookDetailsToolStripMenuItem, Me.ToolStripSeparator1, Me.SubmitRevisionToolStripMenuItem})
+        Me.ToolStripDropDownButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BookDetailsToolStripMenuItem, Me.SubmitRevisionToolStripMenuItem, Me.ToolStripSeparator1, Me.SubmitRevisionToolStripMenuItem1})
         Me.ToolStripDropDownButton1.Image = CType(resources.GetObject("ToolStripDropDownButton1.Image"), System.Drawing.Image)
         Me.ToolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripDropDownButton1.Name = "ToolStripDropDownButton1"
         Me.ToolStripDropDownButton1.Size = New System.Drawing.Size(45, 40)
-        Me.ToolStripDropDownButton1.Text = "View"
+        Me.ToolStripDropDownButton1.Text = "Edit"
         Me.ToolStripDropDownButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'BookDetailsToolStripMenuItem
         '
         Me.BookDetailsToolStripMenuItem.Name = "BookDetailsToolStripMenuItem"
         Me.BookDetailsToolStripMenuItem.Size = New System.Drawing.Size(159, 22)
-        Me.BookDetailsToolStripMenuItem.Text = "Book Details"
+        Me.BookDetailsToolStripMenuItem.Text = "Edit"
+        '
+        'SubmitRevisionToolStripMenuItem
+        '
+        Me.SubmitRevisionToolStripMenuItem.Name = "SubmitRevisionToolStripMenuItem"
+        Me.SubmitRevisionToolStripMenuItem.Size = New System.Drawing.Size(159, 22)
+        Me.SubmitRevisionToolStripMenuItem.Text = "Copy"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
         Me.ToolStripSeparator1.Size = New System.Drawing.Size(156, 6)
         '
-        'SubmitRevisionToolStripMenuItem
+        'SubmitRevisionToolStripMenuItem1
         '
-        Me.SubmitRevisionToolStripMenuItem.Name = "SubmitRevisionToolStripMenuItem"
-        Me.SubmitRevisionToolStripMenuItem.Size = New System.Drawing.Size(159, 22)
-        Me.SubmitRevisionToolStripMenuItem.Text = "Submit Revision"
+        Me.SubmitRevisionToolStripMenuItem1.Name = "SubmitRevisionToolStripMenuItem1"
+        Me.SubmitRevisionToolStripMenuItem1.Size = New System.Drawing.Size(159, 22)
+        Me.SubmitRevisionToolStripMenuItem1.Text = "Submit Revision"
         '
         'Book
         '
@@ -181,14 +188,14 @@ Partial Class Book
         Me.Controls.Add(Me.Panel_WA)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Book"
-        Me.Text = "book"
+        Me.Text = "Document"
         Me.Panel_WA.ResumeLayout(False)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -199,7 +206,6 @@ Partial Class Book
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents ToolStripDropDownButton1 As System.Windows.Forms.ToolStripDropDownButton
     Friend WithEvents BookDetailsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents SubmitRevisionToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripDropDownButton2 As System.Windows.Forms.ToolStripDropDownButton
     Friend WithEvents AddNewToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
@@ -208,4 +214,6 @@ Partial Class Book
     Friend WithEvents PrintToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripSeparator3 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents DownloadToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents SubmitRevisionToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
 End Class

@@ -135,7 +135,7 @@ Partial Class Add
         '
         Me.btn_submit.BackColor = System.Drawing.Color.LightSteelBlue
         Me.btn_submit.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_submit.Location = New System.Drawing.Point(547, 424)
+        Me.btn_submit.Location = New System.Drawing.Point(547, 374)
         Me.btn_submit.Name = "btn_submit"
         Me.btn_submit.Size = New System.Drawing.Size(93, 40)
         Me.btn_submit.TabIndex = 10
@@ -191,7 +191,7 @@ Partial Class Add
         Me.GroupBox3.Controls.Add(Me.Panel1)
         Me.GroupBox3.Location = New System.Drawing.Point(22, 252)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(485, 190)
+        Me.GroupBox3.Size = New System.Drawing.Size(505, 162)
         Me.GroupBox3.TabIndex = 13
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Authors"
@@ -206,7 +206,7 @@ Partial Class Add
         Me.DataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.DataGridView1.Location = New System.Drawing.Point(3, 16)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(479, 129)
+        Me.DataGridView1.Size = New System.Drawing.Size(499, 101)
         Me.DataGridView1.TabIndex = 0
         '
         'Column1
@@ -218,9 +218,9 @@ Partial Class Add
         '
         Me.Panel1.Controls.Add(Me.btn_add)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(3, 145)
+        Me.Panel1.Location = New System.Drawing.Point(3, 117)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(479, 42)
+        Me.Panel1.Size = New System.Drawing.Size(499, 42)
         Me.Panel1.TabIndex = 0
         '
         'btn_add
@@ -228,7 +228,7 @@ Partial Class Add
         Me.btn_add.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btn_add.BackColor = System.Drawing.Color.LightSteelBlue
-        Me.btn_add.Location = New System.Drawing.Point(389, 10)
+        Me.btn_add.Location = New System.Drawing.Point(409, 10)
         Me.btn_add.Name = "btn_add"
         Me.btn_add.Size = New System.Drawing.Size(75, 23)
         Me.btn_add.TabIndex = 0
@@ -239,7 +239,7 @@ Partial Class Add
         '
         Me.Button2.BackColor = System.Drawing.Color.LightSteelBlue
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(547, 318)
+        Me.Button2.Location = New System.Drawing.Point(547, 268)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(93, 40)
         Me.Button2.TabIndex = 14
@@ -250,7 +250,7 @@ Partial Class Add
         '
         Me.Button3.BackColor = System.Drawing.Color.LightSteelBlue
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(547, 372)
+        Me.Button3.Location = New System.Drawing.Point(547, 322)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(93, 40)
         Me.Button3.TabIndex = 15
@@ -262,7 +262,7 @@ Partial Class Add
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkGray
-        Me.ClientSize = New System.Drawing.Size(665, 491)
+        Me.ClientSize = New System.Drawing.Size(665, 451)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.btn_submit)
@@ -271,6 +271,7 @@ Partial Class Add
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "Add"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Add Book"
