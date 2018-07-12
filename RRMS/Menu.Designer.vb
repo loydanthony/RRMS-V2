@@ -58,6 +58,10 @@ Partial Class Menu
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Timer_DateNow = New System.Windows.Forms.Timer(Me.components)
         Me.Panel_WA = New System.Windows.Forms.Panel()
+        Me.HELPToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ViewHelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripTextBox1 = New System.Windows.Forms.ToolStripTextBox()
         Me.Panel_Top.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
@@ -103,7 +107,7 @@ Partial Class Menu
         '
         Me.MenuStrip1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.MenuStrip1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BookToolStripMenuItem, Me.FTPToolStripMenuItem, Me.ToolsToolStripMenuItem, Me.SettingToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BookToolStripMenuItem, Me.FTPToolStripMenuItem, Me.ToolsToolStripMenuItem, Me.SettingToolStripMenuItem, Me.HELPToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(728, 28)
@@ -113,28 +117,28 @@ Partial Class Menu
         'BookToolStripMenuItem
         '
         Me.BookToolStripMenuItem.Name = "BookToolStripMenuItem"
-        Me.BookToolStripMenuItem.Size = New System.Drawing.Size(55, 24)
-        Me.BookToolStripMenuItem.Text = "Book"
+        Me.BookToolStripMenuItem.Size = New System.Drawing.Size(47, 24)
+        Me.BookToolStripMenuItem.Text = "FILE"
         '
         'FTPToolStripMenuItem
         '
         Me.FTPToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BrowsToolStripMenuItem})
         Me.FTPToolStripMenuItem.Name = "FTPToolStripMenuItem"
-        Me.FTPToolStripMenuItem.Size = New System.Drawing.Size(70, 24)
-        Me.FTPToolStripMenuItem.Text = "Archive"
+        Me.FTPToolStripMenuItem.Size = New System.Drawing.Size(81, 24)
+        Me.FTPToolStripMenuItem.Text = "ARCHIVE"
         '
         'BrowsToolStripMenuItem
         '
         Me.BrowsToolStripMenuItem.Name = "BrowsToolStripMenuItem"
-        Me.BrowsToolStripMenuItem.Size = New System.Drawing.Size(126, 24)
+        Me.BrowsToolStripMenuItem.Size = New System.Drawing.Size(152, 24)
         Me.BrowsToolStripMenuItem.Text = "Browse"
         '
         'ToolsToolStripMenuItem
         '
         Me.ToolsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.IndexToolStripMenuItem})
         Me.ToolsToolStripMenuItem.Name = "ToolsToolStripMenuItem"
-        Me.ToolsToolStripMenuItem.Size = New System.Drawing.Size(56, 24)
-        Me.ToolsToolStripMenuItem.Text = "Tools"
+        Me.ToolsToolStripMenuItem.Size = New System.Drawing.Size(65, 24)
+        Me.ToolsToolStripMenuItem.Text = "TOOLS"
         '
         'IndexToolStripMenuItem
         '
@@ -153,8 +157,8 @@ Partial Class Menu
         '
         Me.SettingToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsersToolStripMenuItem, Me.AdministrationToolStripMenuItem})
         Me.SettingToolStripMenuItem.Name = "SettingToolStripMenuItem"
-        Me.SettingToolStripMenuItem.Size = New System.Drawing.Size(96, 24)
-        Me.SettingToolStripMenuItem.Text = "Preferenses"
+        Me.SettingToolStripMenuItem.Size = New System.Drawing.Size(114, 24)
+        Me.SettingToolStripMenuItem.Text = "PREFERENCES"
         '
         'UsersToolStripMenuItem
         '
@@ -359,6 +363,31 @@ Partial Class Menu
         Me.Panel_WA.Size = New System.Drawing.Size(850, 369)
         Me.Panel_WA.TabIndex = 4
         '
+        'HELPToolStripMenuItem
+        '
+        Me.HELPToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ViewHelpToolStripMenuItem, Me.ToolStripSeparator1, Me.ToolStripTextBox1})
+        Me.HELPToolStripMenuItem.Name = "HELPToolStripMenuItem"
+        Me.HELPToolStripMenuItem.Size = New System.Drawing.Size(55, 24)
+        Me.HELPToolStripMenuItem.Text = "HELP"
+        '
+        'ViewHelpToolStripMenuItem
+        '
+        Me.ViewHelpToolStripMenuItem.Name = "ViewHelpToolStripMenuItem"
+        Me.ViewHelpToolStripMenuItem.Size = New System.Drawing.Size(160, 24)
+        Me.ViewHelpToolStripMenuItem.Text = "View Help"
+        '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(157, 6)
+        '
+        'ToolStripTextBox1
+        '
+        Me.ToolStripTextBox1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripTextBox1.Name = "ToolStripTextBox1"
+        Me.ToolStripTextBox1.Size = New System.Drawing.Size(100, 27)
+        Me.ToolStripTextBox1.Text = "About "
+        '
         'Menu
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
@@ -426,5 +455,9 @@ Partial Class Menu
     Friend WithEvents Panel6 As System.Windows.Forms.Panel
     Friend WithEvents Panel7 As System.Windows.Forms.Panel
     Friend WithEvents ProgressBar1 As System.Windows.Forms.ProgressBar
+    Friend WithEvents HELPToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ViewHelpToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents ToolStripTextBox1 As System.Windows.Forms.ToolStripTextBox
 
 End Class

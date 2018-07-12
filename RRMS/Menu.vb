@@ -19,4 +19,16 @@
     Private Sub BookToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BookToolStripMenuItem.Click
         Panel_WA.Controls.Add(f2.getPanel(Me))
     End Sub
+
+    Private Sub FTPToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FTPToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub ToolStripTextBox1_Click(sender As Object, e As EventArgs) Handles ToolStripTextBox1.Click
+
+    End Sub
+
+    Private Sub Panel_WA_Paint(sender As Object, e As PaintEventArgs) Handles Panel_WA.Paint
+
+    End Sub
 End Class

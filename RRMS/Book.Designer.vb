@@ -40,6 +40,7 @@ Partial Class Book
         Me.SubmitRevisionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.SubmitRevisionToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.Panel_WA.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -55,7 +56,7 @@ Partial Class Book
         Me.Panel_WA.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel_WA.Location = New System.Drawing.Point(0, 0)
         Me.Panel_WA.Name = "Panel_WA"
-        Me.Panel_WA.Size = New System.Drawing.Size(714, 439)
+        Me.Panel_WA.Size = New System.Drawing.Size(1021, 439)
         Me.Panel_WA.TabIndex = 0
         '
         'DataGridView1
@@ -64,7 +65,7 @@ Partial Class Book
         Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DataGridView1.Location = New System.Drawing.Point(0, 43)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(714, 396)
+        Me.DataGridView1.Size = New System.Drawing.Size(1021, 396)
         Me.DataGridView1.TabIndex = 3
         '
         'Panel1
@@ -74,7 +75,7 @@ Partial Class Book
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(714, 43)
+        Me.Panel1.Size = New System.Drawing.Size(1021, 43)
         Me.Panel1.TabIndex = 2
         '
         'PictureBox1
@@ -82,7 +83,7 @@ Partial Class Book
         Me.PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox1.Image = Global.RRMS.My.Resources.Resources.Time_Logo
-        Me.PictureBox1.Location = New System.Drawing.Point(657, 3)
+        Me.PictureBox1.Location = New System.Drawing.Point(964, 3)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(45, 37)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -93,10 +94,10 @@ Partial Class Book
         '
         Me.ToolStrip1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(32, 32)
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripDropDownButton2, Me.ToolStripDropDownButton1})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripDropDownButton2, Me.ToolStripDropDownButton1, Me.ToolStripButton1})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(714, 43)
+        Me.ToolStrip1.Size = New System.Drawing.Size(1021, 43)
         Me.ToolStrip1.TabIndex = 0
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -180,11 +181,22 @@ Partial Class Book
         Me.SubmitRevisionToolStripMenuItem1.Size = New System.Drawing.Size(159, 22)
         Me.SubmitRevisionToolStripMenuItem1.Text = "Submit Revision"
         '
+        'ToolStripButton1
+        '
+        Me.ToolStripButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton1.Image = Global.RRMS.My.Resources.Resources.Documents_icon
+        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton1.Name = "ToolStripButton1"
+        Me.ToolStripButton1.Size = New System.Drawing.Size(36, 40)
+        Me.ToolStripButton1.Text = "View"
+        Me.ToolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        '
         'Book
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(714, 439)
+        Me.ClientSize = New System.Drawing.Size(1021, 439)
         Me.Controls.Add(Me.Panel_WA)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Book"
@@ -216,4 +228,5 @@ Partial Class Book
     Friend WithEvents DownloadToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents SubmitRevisionToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ToolStripButton1 As System.Windows.Forms.ToolStripButton
 End Class

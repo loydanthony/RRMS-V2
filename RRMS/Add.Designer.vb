@@ -37,17 +37,20 @@ Partial Class Add
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridView_Authour = New System.Windows.Forms.DataGridView()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btn_add = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Column_Name = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView_Authour, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
         Me.SuspendLayout()
         '
         'b_id
@@ -128,7 +131,7 @@ Partial Class Add
         '
         Me.TextBox_categ.Location = New System.Drawing.Point(97, 167)
         Me.TextBox_categ.Name = "TextBox_categ"
-        Me.TextBox_categ.Size = New System.Drawing.Size(338, 20)
+        Me.TextBox_categ.Size = New System.Drawing.Size(338, 24)
         Me.TextBox_categ.TabIndex = 7
         '
         'btn_submit
@@ -152,11 +155,13 @@ Partial Class Add
         Me.GroupBox2.Controls.Add(Me.TextBox_categ)
         Me.GroupBox2.Controls.Add(Me.GroupBox1)
         Me.GroupBox2.Controls.Add(Me.Label1)
+        Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.Location = New System.Drawing.Point(22, 12)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(617, 223)
         Me.GroupBox2.TabIndex = 11
         Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Document Details"
         '
         'Button1
         '
@@ -172,7 +177,7 @@ Partial Class Add
         '
         Me.TextBox1.Location = New System.Drawing.Point(97, 28)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(408, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(408, 24)
         Me.TextBox1.TabIndex = 15
         '
         'Label3
@@ -187,8 +192,9 @@ Partial Class Add
         '
         'GroupBox3
         '
-        Me.GroupBox3.Controls.Add(Me.DataGridView1)
+        Me.GroupBox3.Controls.Add(Me.DataGridView_Authour)
         Me.GroupBox3.Controls.Add(Me.Panel1)
+        Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.Location = New System.Drawing.Point(22, 252)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(505, 162)
@@ -196,23 +202,18 @@ Partial Class Add
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Authors"
         '
-        'DataGridView1
+        'DataGridView_Authour
         '
-        Me.DataGridView1.AllowUserToDeleteRows = False
-        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1})
-        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
-        Me.DataGridView1.Location = New System.Drawing.Point(3, 16)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(499, 101)
-        Me.DataGridView1.TabIndex = 0
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "                                                               Name"
-        Me.Column1.Name = "Column1"
+        Me.DataGridView_Authour.AllowUserToDeleteRows = False
+        Me.DataGridView_Authour.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DataGridView_Authour.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView_Authour.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column_Name})
+        Me.DataGridView_Authour.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DataGridView_Authour.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
+        Me.DataGridView_Authour.Location = New System.Drawing.Point(3, 20)
+        Me.DataGridView_Authour.Name = "DataGridView_Authour"
+        Me.DataGridView_Authour.Size = New System.Drawing.Size(499, 97)
+        Me.DataGridView_Authour.TabIndex = 0
         '
         'Panel1
         '
@@ -227,10 +228,11 @@ Partial Class Add
         '
         Me.btn_add.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btn_add.AutoSize = True
         Me.btn_add.BackColor = System.Drawing.Color.LightSteelBlue
         Me.btn_add.Location = New System.Drawing.Point(409, 10)
         Me.btn_add.Name = "btn_add"
-        Me.btn_add.Size = New System.Drawing.Size(75, 23)
+        Me.btn_add.Size = New System.Drawing.Size(75, 28)
         Me.btn_add.TabIndex = 0
         Me.btn_add.Text = "Add"
         Me.btn_add.UseVisualStyleBackColor = False
@@ -257,12 +259,39 @@ Partial Class Add
         Me.Button3.Text = "Clear"
         Me.Button3.UseVisualStyleBackColor = False
         '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.Label2)
+        Me.GroupBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox4.Location = New System.Drawing.Point(22, 420)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(502, 100)
+        Me.GroupBox4.TabIndex = 16
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "Adviser"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(22, 24)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(51, 18)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Label2"
+        '
+        'Column_Name
+        '
+        Me.Column_Name.HeaderText = "Name"
+        Me.Column_Name.MaxInputLength = 50
+        Me.Column_Name.Name = "Column_Name"
+        '
         'Add
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkGray
-        Me.ClientSize = New System.Drawing.Size(665, 451)
+        Me.ClientSize = New System.Drawing.Size(665, 541)
+        Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.btn_submit)
@@ -280,8 +309,11 @@ Partial Class Add
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView_Authour, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -296,7 +328,7 @@ Partial Class Add
     Friend WithEvents btn_submit As System.Windows.Forms.Button
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents DataGridView_Authour As System.Windows.Forms.DataGridView
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents btn_add As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
@@ -304,5 +336,7 @@ Partial Class Add
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Column1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Column_Name As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

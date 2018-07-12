@@ -45,4 +45,12 @@
     Private Sub BookDetailsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BookDetailsToolStripMenuItem.Click
 
     End Sub
+
+    Private Sub Book_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        m.Panel_WA.Controls.Clear()
+    End Sub
 End Class
