@@ -1,4 +1,5 @@
 ﻿Public Class Add
+    Dim addAut As AddAuthors
 
     Private Sub Add_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -9,7 +10,8 @@
     End Sub
 
     Private Sub btn_add_Click(sender As Object, e As EventArgs) Handles btn_add.Click
-
+        addAut = New AddAuthors(Me)
+        addAut.ShowDialog()
     End Sub
 
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
@@ -21,4 +23,15 @@
     End Sub
 
 
+    Private Sub RichTextBox_b_title_TextChanged(sender As Object, e As EventArgs) Handles RichTextBox_b_title.TextChanged
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+    End Sub
+
+    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+
+    End Sub
 End Class
