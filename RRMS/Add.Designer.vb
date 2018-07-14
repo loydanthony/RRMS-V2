@@ -46,6 +46,7 @@ Partial Class Add
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.Label2 = New System.Windows.Forms.Label()
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.Column_Name = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
@@ -57,6 +58,8 @@ Partial Class Add
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
+=======
+>>>>>>> parent of d5d41c2... adding athurs
 =======
 >>>>>>> parent of d5d41c2... adding athurs
         Me.GroupBox1.SuspendLayout()
@@ -356,6 +359,7 @@ Partial Class Add
         Me.Label5.Text = "M.I"
         '
 <<<<<<< HEAD
+<<<<<<< HEAD
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(468, 54)
@@ -399,6 +403,8 @@ Partial Class Add
         Me.Label8.TabIndex = 9
         Me.Label8.Text = "ID"
         '
+=======
+>>>>>>> parent of d5d41c2... adding athurs
 =======
 >>>>>>> parent of d5d41c2... adding athurs
         'Add
