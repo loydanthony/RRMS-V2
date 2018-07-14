@@ -53,6 +53,7 @@
             TextBox_mi.Text = Nothing Then
             MsgBox("Please complete all fields.", MsgBoxStyle.Exclamation, "Error")
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         If vid(TextBox_fnanme, TextBox_lname, TextBox_mi, TextBox_suf) = False Then
             Exit Sub
@@ -60,6 +61,8 @@
         Else
             MsgBox("Successfully Added!", MsgBoxStyle.Information, "Msg")
 >>>>>>> parent of fd03cdb... Merge branch 'UI-Branch' of https://github.com/loydanthony/RRMS-V2 into UI-Branch
+=======
+>>>>>>> parent of 911a174... Forms With Function
 =======
 >>>>>>> parent of 911a174... Forms With Function
         End If
