@@ -58,10 +58,13 @@ Partial Class Add
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
+<<<<<<< HEAD
 =======
 >>>>>>> parent of d5d41c2... adding athurs
 =======
 >>>>>>> parent of d5d41c2... adding athurs
+=======
+>>>>>>> parent of 911a174... Forms With Function
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -360,6 +363,9 @@ Partial Class Add
         '
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 911a174... Forms With Function
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(468, 54)
