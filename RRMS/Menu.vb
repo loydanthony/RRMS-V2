@@ -1,6 +1,5 @@
 ﻿Public Class Menu
     Private f2 As Book
-    ''Private db_con As db_config
     Private Sub Menu_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Timer_DateNow.Start()
         f2 = New Book
