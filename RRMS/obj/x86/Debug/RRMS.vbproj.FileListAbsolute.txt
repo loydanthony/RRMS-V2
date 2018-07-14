@@ -50,4 +50,3 @@ F:\cloning\RRMS-V2\RRMS\obj\x86\Debug\RRMS.vbproj.GenerateResource.Cache
 F:\cloning\RRMS-V2\RRMS\obj\x86\Debug\RRMS.vbprojResolveAssemblyReference.cache
 D:\My Computer Documents\Documents\GitHub\RRMS-V2\RRMS\obj\x86\Debug\RRMS.AddAuthors.resources
 D:\My Computer Documents\Documents\GitHub\RRMS-V2\RRMS\obj\x86\Debug\RRMS.vbprojResolveAssemblyReference.cache
-F:\cloning\RRMS-V2\RRMS\obj\x86\Debug\RRMS.AddAuthors.resources

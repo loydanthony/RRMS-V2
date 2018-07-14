@@ -22,7 +22,6 @@ Partial Class AddAuthors
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -37,9 +36,7 @@ Partial Class AddAuthors
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.GroupBox1.SuspendLayout()
-        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -89,7 +86,6 @@ Partial Class AddAuthors
         Me.TextBox_suf.Name = "TextBox_suf"
         Me.TextBox_suf.Size = New System.Drawing.Size(51, 24)
         Me.TextBox_suf.TabIndex = 19
-        Me.TextBox_suf.Tag = "Enter Suffix"
         '
         'Label4
         '
@@ -108,7 +104,6 @@ Partial Class AddAuthors
         Me.TextBox_lname.Name = "TextBox_lname"
         Me.TextBox_lname.Size = New System.Drawing.Size(240, 24)
         Me.TextBox_lname.TabIndex = 17
-        Me.TextBox_lname.Tag = "Enter Lastname"
         '
         'Label3
         '
@@ -128,7 +123,6 @@ Partial Class AddAuthors
         Me.TextBox_mi.Name = "TextBox_mi"
         Me.TextBox_mi.Size = New System.Drawing.Size(51, 24)
         Me.TextBox_mi.TabIndex = 15
-        Me.TextBox_mi.Tag = "Enter M.I"
         '
         'Label2
         '
@@ -147,7 +141,6 @@ Partial Class AddAuthors
         Me.TextBox_fnanme.Name = "TextBox_fnanme"
         Me.TextBox_fnanme.Size = New System.Drawing.Size(240, 24)
         Me.TextBox_fnanme.TabIndex = 13
-        Me.TextBox_fnanme.Tag = "Enter Firstname"
         '
         'Label1
         '
@@ -192,10 +185,6 @@ Partial Class AddAuthors
         Me.Button3.Text = "Add"
         Me.Button3.UseVisualStyleBackColor = True
         '
-        'ErrorProvider1
-        '
-        Me.ErrorProvider1.ContainerControl = Me
-        '
         'AddAuthors
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -213,7 +202,6 @@ Partial Class AddAuthors
         Me.Text = "Authors Details"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -232,5 +220,4 @@ Partial Class AddAuthors
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents ErrorProvider1 As System.Windows.Forms.ErrorProvider
 End Class
