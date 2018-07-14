@@ -38,12 +38,14 @@ Partial Class Add
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.DataGridView_Authour = New System.Windows.Forms.DataGridView()
+        Me.Column_Name = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btn_add = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.Label2 = New System.Windows.Forms.Label()
+<<<<<<< HEAD
         Me.Column_Name = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
@@ -55,6 +57,8 @@ Partial Class Add
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
+=======
+>>>>>>> parent of d5d41c2... adding athurs
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -226,6 +230,12 @@ Partial Class Add
         Me.DataGridView_Authour.Size = New System.Drawing.Size(525, 97)
         Me.DataGridView_Authour.TabIndex = 0
         '
+        'Column_Name
+        '
+        Me.Column_Name.HeaderText = "Name"
+        Me.Column_Name.MaxInputLength = 50
+        Me.Column_Name.Name = "Column_Name"
+        '
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.btn_add)
@@ -345,6 +355,7 @@ Partial Class Add
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "M.I"
         '
+<<<<<<< HEAD
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(468, 54)
@@ -388,6 +399,8 @@ Partial Class Add
         Me.Label8.TabIndex = 9
         Me.Label8.Text = "ID"
         '
+=======
+>>>>>>> parent of d5d41c2... adding athurs
         'Add
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
