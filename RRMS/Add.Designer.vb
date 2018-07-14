@@ -43,15 +43,20 @@ Partial Class Add
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Column_Name = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
+<<<<<<< HEAD
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+=======
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Column_Name = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -59,6 +64,7 @@ Partial Class Add
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+>>>>>>> a7e9c9210ebfd25a3ace32c3ab381937187ec513
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -295,64 +301,27 @@ Partial Class Add
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Adviser"
         '
-        'TextBox6
+        'Label2
         '
-        Me.TextBox6.Enabled = False
-        Me.TextBox6.Location = New System.Drawing.Point(5, 54)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(57, 24)
-        Me.TextBox6.TabIndex = 10
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(62, 33)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(81, 18)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "First Name"
         '
-        'Label8
+        'Column_Name
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(19, 33)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(22, 18)
-        Me.Label8.TabIndex = 9
-        Me.Label8.Text = "ID"
+        Me.Column_Name.HeaderText = "Name"
+        Me.Column_Name.MaxInputLength = 50
+        Me.Column_Name.Name = "Column_Name"
         '
-        'Label7
+        'TextBox2
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(470, 81)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(51, 13)
-        Me.Label7.TabIndex = 8
-        Me.Label7.Text = "(eg. Jr. II)"
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(468, 54)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(57, 24)
-        Me.TextBox5.TabIndex = 7
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(465, 33)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(44, 18)
-        Me.Label6.TabIndex = 6
-        Me.Label6.Text = "Suffix"
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(294, 54)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(168, 24)
-        Me.TextBox4.TabIndex = 5
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(248, 33)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(28, 18)
-        Me.Label5.TabIndex = 4
-        Me.Label5.Text = "M.I"
+        Me.TextBox2.Location = New System.Drawing.Point(65, 54)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(165, 24)
+        Me.TextBox2.TabIndex = 1
         '
         'TextBox3
         '
@@ -370,21 +339,64 @@ Partial Class Add
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "w"
         '
-        'TextBox2
+        'TextBox4
         '
-        Me.TextBox2.Location = New System.Drawing.Point(65, 54)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(165, 24)
-        Me.TextBox2.TabIndex = 1
+        Me.TextBox4.Location = New System.Drawing.Point(294, 54)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(168, 24)
+        Me.TextBox4.TabIndex = 5
         '
-        'Label2
+        'Label5
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(62, 33)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(81, 18)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "First Name"
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(248, 33)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(28, 18)
+        Me.Label5.TabIndex = 4
+        Me.Label5.Text = "M.I"
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Location = New System.Drawing.Point(468, 54)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(57, 24)
+        Me.TextBox5.TabIndex = 7
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(465, 33)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(44, 18)
+        Me.Label6.TabIndex = 6
+        Me.Label6.Text = "Suffix"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(470, 81)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(51, 13)
+        Me.Label7.TabIndex = 8
+        Me.Label7.Text = "(eg. Jr. II)"
+        '
+        'TextBox6
+        '
+        Me.TextBox6.Enabled = False
+        Me.TextBox6.Location = New System.Drawing.Point(5, 54)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(57, 24)
+        Me.TextBox6.TabIndex = 10
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(19, 33)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(22, 18)
+        Me.Label8.TabIndex = 9
+        Me.Label8.Text = "ID"
         '
         'Column_Name
         '
@@ -435,7 +447,7 @@ Partial Class Add
         Me.MinimizeBox = False
         Me.Name = "Add"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
-        Me.Text = "Add Document"
+        Me.Text = "Add Book"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
