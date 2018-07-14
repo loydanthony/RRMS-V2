@@ -57,4 +57,8 @@
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         m.Panel_WA.Controls.Clear()
     End Sub
+
+    Private Sub ToolStripDropDownButton2_Click(sender As Object, e As EventArgs) Handles ToolStripDropDownButton2.Click
+
+    End Sub
 End Class
