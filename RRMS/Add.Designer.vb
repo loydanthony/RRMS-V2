@@ -48,7 +48,6 @@ Partial Class Add
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-<<<<<<< HEAD
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
@@ -56,15 +55,6 @@ Partial Class Add
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
-=======
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Column_Name = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colfname = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
->>>>>>> a7e9c9210ebfd25a3ace32c3ab381937187ec513
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -158,7 +148,7 @@ Partial Class Add
         '
         Me.btn_submit.BackColor = System.Drawing.Color.LightSteelBlue
         Me.btn_submit.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_submit.Location = New System.Drawing.Point(391, 535)
+        Me.btn_submit.Location = New System.Drawing.Point(569, 490)
         Me.btn_submit.Name = "btn_submit"
         Me.btn_submit.Size = New System.Drawing.Size(93, 40)
         Me.btn_submit.TabIndex = 10
@@ -218,7 +208,7 @@ Partial Class Add
         Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.Location = New System.Drawing.Point(22, 252)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(640, 162)
+        Me.GroupBox3.Size = New System.Drawing.Size(531, 162)
         Me.GroupBox3.TabIndex = 13
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Authors"
@@ -228,12 +218,12 @@ Partial Class Add
         Me.DataGridView_Authour.AllowUserToDeleteRows = False
         Me.DataGridView_Authour.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView_Authour.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView_Authour.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column_Name, Me.colfname, Me.Column1, Me.Column2, Me.Column3})
+        Me.DataGridView_Authour.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column_Name})
         Me.DataGridView_Authour.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DataGridView_Authour.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.DataGridView_Authour.Location = New System.Drawing.Point(3, 20)
         Me.DataGridView_Authour.Name = "DataGridView_Authour"
-        Me.DataGridView_Authour.Size = New System.Drawing.Size(634, 97)
+        Me.DataGridView_Authour.Size = New System.Drawing.Size(525, 97)
         Me.DataGridView_Authour.TabIndex = 0
         '
         'Panel1
@@ -242,7 +232,7 @@ Partial Class Add
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel1.Location = New System.Drawing.Point(3, 117)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(634, 42)
+        Me.Panel1.Size = New System.Drawing.Size(525, 42)
         Me.Panel1.TabIndex = 0
         '
         'btn_add
@@ -251,7 +241,7 @@ Partial Class Add
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btn_add.AutoSize = True
         Me.btn_add.BackColor = System.Drawing.Color.LightSteelBlue
-        Me.btn_add.Location = New System.Drawing.Point(544, 10)
+        Me.btn_add.Location = New System.Drawing.Point(435, 10)
         Me.btn_add.Name = "btn_add"
         Me.btn_add.Size = New System.Drawing.Size(75, 28)
         Me.btn_add.TabIndex = 0
@@ -262,7 +252,7 @@ Partial Class Add
         '
         Me.Button2.BackColor = System.Drawing.Color.LightSteelBlue
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(159, 535)
+        Me.Button2.Location = New System.Drawing.Point(569, 384)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(93, 40)
         Me.Button2.TabIndex = 14
@@ -273,7 +263,7 @@ Partial Class Add
         '
         Me.Button3.BackColor = System.Drawing.Color.LightSteelBlue
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(273, 535)
+        Me.Button3.Location = New System.Drawing.Point(569, 438)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(93, 40)
         Me.Button3.TabIndex = 15
@@ -296,7 +286,7 @@ Partial Class Add
         Me.GroupBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox4.Location = New System.Drawing.Point(22, 420)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(637, 109)
+        Me.GroupBox4.Size = New System.Drawing.Size(531, 109)
         Me.GroupBox4.TabIndex = 16
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Adviser"
@@ -398,43 +388,12 @@ Partial Class Add
         Me.Label8.TabIndex = 9
         Me.Label8.Text = "ID"
         '
-        'Column_Name
-        '
-        Me.Column_Name.FillWeight = 68.39914!
-        Me.Column_Name.HeaderText = "ID"
-        Me.Column_Name.MaxInputLength = 50
-        Me.Column_Name.Name = "Column_Name"
-        '
-        'colfname
-        '
-        Me.colfname.FillWeight = 122.7164!
-        Me.colfname.HeaderText = "First Name"
-        Me.colfname.Name = "colfname"
-        '
-        'Column1
-        '
-        Me.Column1.FillWeight = 122.7164!
-        Me.Column1.HeaderText = "Middle Name"
-        Me.Column1.Name = "Column1"
-        '
-        'Column2
-        '
-        Me.Column2.FillWeight = 122.7164!
-        Me.Column2.HeaderText = "Last Name"
-        Me.Column2.Name = "Column2"
-        '
-        'Column3
-        '
-        Me.Column3.FillWeight = 63.45177!
-        Me.Column3.HeaderText = "Suffix"
-        Me.Column3.Name = "Column3"
-        '
         'Add
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkGray
-        Me.ClientSize = New System.Drawing.Size(674, 611)
+        Me.ClientSize = New System.Drawing.Size(674, 541)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
@@ -482,6 +441,7 @@ Partial Class Add
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Column_Name As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
@@ -492,9 +452,4 @@ Partial Class Add
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents Column_Name As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents colfname As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class
