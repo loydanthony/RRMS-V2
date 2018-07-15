@@ -25,10 +25,10 @@ Partial Class Add
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Add))
         Me.b_id = New System.Windows.Forms.Label()
         Me.RichTextBox_b_title = New System.Windows.Forms.RichTextBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.Radio_pubed = New System.Windows.Forms.RadioButton()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.Radio_onGoing = New System.Windows.Forms.RadioButton()
+        Me.Radio_unpub = New System.Windows.Forms.RadioButton()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox_categ = New System.Windows.Forms.TextBox()
         Me.btn_submit = New System.Windows.Forms.Button()
@@ -38,6 +38,11 @@ Partial Class Add
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.DataGridView_Authour = New System.Windows.Forms.DataGridView()
+        Me.Column_Name = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.col_fname = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.col_mname = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.col_lname = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.col_suff = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btn_add = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -46,19 +51,14 @@ Partial Class Add
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.TextBox_advSuff = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TextBox_advLName = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox_advMid = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox_advFname = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Column_Name = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.col_fname = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.col_mname = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.col_lname = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.col_suff = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -85,22 +85,22 @@ Partial Class Add
         Me.RichTextBox_b_title.TabIndex = 2
         Me.RichTextBox_b_title.Text = ""
         '
-        'RadioButton1
+        'Radio_pubed
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(6, 29)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(90, 22)
-        Me.RadioButton1.TabIndex = 4
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Published"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.Radio_pubed.AutoSize = True
+        Me.Radio_pubed.Location = New System.Drawing.Point(6, 29)
+        Me.Radio_pubed.Name = "Radio_pubed"
+        Me.Radio_pubed.Size = New System.Drawing.Size(90, 22)
+        Me.Radio_pubed.TabIndex = 4
+        Me.Radio_pubed.TabStop = True
+        Me.Radio_pubed.Text = "Published"
+        Me.Radio_pubed.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.RadioButton3)
-        Me.GroupBox1.Controls.Add(Me.RadioButton2)
-        Me.GroupBox1.Controls.Add(Me.RadioButton1)
+        Me.GroupBox1.Controls.Add(Me.Radio_onGoing)
+        Me.GroupBox1.Controls.Add(Me.Radio_unpub)
+        Me.GroupBox1.Controls.Add(Me.Radio_pubed)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(451, 76)
         Me.GroupBox1.Name = "GroupBox1"
@@ -109,27 +109,27 @@ Partial Class Add
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Status"
         '
-        'RadioButton3
+        'Radio_onGoing
         '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(6, 85)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(86, 22)
-        Me.RadioButton3.TabIndex = 6
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "On going"
-        Me.RadioButton3.UseVisualStyleBackColor = True
+        Me.Radio_onGoing.AutoSize = True
+        Me.Radio_onGoing.Location = New System.Drawing.Point(6, 85)
+        Me.Radio_onGoing.Name = "Radio_onGoing"
+        Me.Radio_onGoing.Size = New System.Drawing.Size(86, 22)
+        Me.Radio_onGoing.TabIndex = 6
+        Me.Radio_onGoing.TabStop = True
+        Me.Radio_onGoing.Text = "On going"
+        Me.Radio_onGoing.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'Radio_unpub
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(6, 57)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(107, 22)
-        Me.RadioButton2.TabIndex = 5
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Unpublished"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.Radio_unpub.AutoSize = True
+        Me.Radio_unpub.Location = New System.Drawing.Point(6, 57)
+        Me.Radio_unpub.Name = "Radio_unpub"
+        Me.Radio_unpub.Size = New System.Drawing.Size(107, 22)
+        Me.Radio_unpub.TabIndex = 5
+        Me.Radio_unpub.TabStop = True
+        Me.Radio_unpub.Text = "Unpublished"
+        Me.Radio_unpub.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -230,6 +230,37 @@ Partial Class Add
         Me.DataGridView_Authour.Size = New System.Drawing.Size(634, 97)
         Me.DataGridView_Authour.TabIndex = 0
         '
+        'Column_Name
+        '
+        Me.Column_Name.FillWeight = 58.82011!
+        Me.Column_Name.HeaderText = "ID"
+        Me.Column_Name.MaxInputLength = 50
+        Me.Column_Name.Name = "Column_Name"
+        '
+        'col_fname
+        '
+        Me.col_fname.FillWeight = 130.1395!
+        Me.col_fname.HeaderText = "First Name"
+        Me.col_fname.Name = "col_fname"
+        '
+        'col_mname
+        '
+        Me.col_mname.FillWeight = 130.1395!
+        Me.col_mname.HeaderText = "Middle Name"
+        Me.col_mname.Name = "col_mname"
+        '
+        'col_lname
+        '
+        Me.col_lname.FillWeight = 130.1395!
+        Me.col_lname.HeaderText = "Last Name"
+        Me.col_lname.Name = "col_lname"
+        '
+        'col_suff
+        '
+        Me.col_suff.FillWeight = 50.76142!
+        Me.col_suff.HeaderText = "Suffix"
+        Me.col_suff.Name = "col_suff"
+        '
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.btn_add)
@@ -279,13 +310,13 @@ Partial Class Add
         Me.GroupBox4.Controls.Add(Me.TextBox6)
         Me.GroupBox4.Controls.Add(Me.Label8)
         Me.GroupBox4.Controls.Add(Me.Label7)
-        Me.GroupBox4.Controls.Add(Me.TextBox5)
+        Me.GroupBox4.Controls.Add(Me.TextBox_advSuff)
         Me.GroupBox4.Controls.Add(Me.Label6)
-        Me.GroupBox4.Controls.Add(Me.TextBox4)
+        Me.GroupBox4.Controls.Add(Me.TextBox_advLName)
         Me.GroupBox4.Controls.Add(Me.Label5)
-        Me.GroupBox4.Controls.Add(Me.TextBox3)
+        Me.GroupBox4.Controls.Add(Me.TextBox_advMid)
         Me.GroupBox4.Controls.Add(Me.Label4)
-        Me.GroupBox4.Controls.Add(Me.TextBox2)
+        Me.GroupBox4.Controls.Add(Me.TextBox_advFname)
         Me.GroupBox4.Controls.Add(Me.Label2)
         Me.GroupBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox4.Location = New System.Drawing.Point(22, 420)
@@ -322,12 +353,12 @@ Partial Class Add
         Me.Label7.TabIndex = 8
         Me.Label7.Text = "(eg. Jr. II)"
         '
-        'TextBox5
+        'TextBox_advSuff
         '
-        Me.TextBox5.Location = New System.Drawing.Point(569, 54)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(57, 24)
-        Me.TextBox5.TabIndex = 7
+        Me.TextBox_advSuff.Location = New System.Drawing.Point(569, 54)
+        Me.TextBox_advSuff.Name = "TextBox_advSuff"
+        Me.TextBox_advSuff.Size = New System.Drawing.Size(57, 24)
+        Me.TextBox_advSuff.TabIndex = 7
         '
         'Label6
         '
@@ -338,12 +369,12 @@ Partial Class Add
         Me.Label6.TabIndex = 6
         Me.Label6.Text = "Suffix"
         '
-        'TextBox4
+        'TextBox_advLName
         '
-        Me.TextBox4.Location = New System.Drawing.Point(392, 54)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(168, 24)
-        Me.TextBox4.TabIndex = 5
+        Me.TextBox_advLName.Location = New System.Drawing.Point(392, 54)
+        Me.TextBox_advLName.Name = "TextBox_advLName"
+        Me.TextBox_advLName.Size = New System.Drawing.Size(168, 24)
+        Me.TextBox_advLName.TabIndex = 5
         '
         'Label5
         '
@@ -354,12 +385,12 @@ Partial Class Add
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Middle Name"
         '
-        'TextBox3
+        'TextBox_advMid
         '
-        Me.TextBox3.Location = New System.Drawing.Point(237, 54)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(146, 24)
-        Me.TextBox3.TabIndex = 3
+        Me.TextBox_advMid.Location = New System.Drawing.Point(237, 54)
+        Me.TextBox_advMid.Name = "TextBox_advMid"
+        Me.TextBox_advMid.Size = New System.Drawing.Size(146, 24)
+        Me.TextBox_advMid.TabIndex = 3
         '
         'Label4
         '
@@ -370,12 +401,12 @@ Partial Class Add
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "Last Name"
         '
-        'TextBox2
+        'TextBox_advFname
         '
-        Me.TextBox2.Location = New System.Drawing.Point(65, 54)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(165, 24)
-        Me.TextBox2.TabIndex = 1
+        Me.TextBox_advFname.Location = New System.Drawing.Point(65, 54)
+        Me.TextBox_advFname.Name = "TextBox_advFname"
+        Me.TextBox_advFname.Size = New System.Drawing.Size(165, 24)
+        Me.TextBox_advFname.TabIndex = 1
         '
         'Label2
         '
@@ -385,37 +416,6 @@ Partial Class Add
         Me.Label2.Size = New System.Drawing.Size(81, 18)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "First Name"
-        '
-        'Column_Name
-        '
-        Me.Column_Name.FillWeight = 58.82011!
-        Me.Column_Name.HeaderText = "ID"
-        Me.Column_Name.MaxInputLength = 50
-        Me.Column_Name.Name = "Column_Name"
-        '
-        'col_fname
-        '
-        Me.col_fname.FillWeight = 130.1395!
-        Me.col_fname.HeaderText = "First Name"
-        Me.col_fname.Name = "col_fname"
-        '
-        'col_mname
-        '
-        Me.col_mname.FillWeight = 130.1395!
-        Me.col_mname.HeaderText = "Middle Name"
-        Me.col_mname.Name = "col_mname"
-        '
-        'col_lname
-        '
-        Me.col_lname.FillWeight = 130.1395!
-        Me.col_lname.HeaderText = "Last Name"
-        Me.col_lname.Name = "col_lname"
-        '
-        'col_suff
-        '
-        Me.col_suff.FillWeight = 50.76142!
-        Me.col_suff.HeaderText = "Suffix"
-        Me.col_suff.Name = "col_suff"
         '
         'Add
         '
@@ -451,10 +451,10 @@ Partial Class Add
     End Sub
     Friend WithEvents b_id As System.Windows.Forms.Label
     Friend WithEvents RichTextBox_b_title As System.Windows.Forms.RichTextBox
-    Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
+    Friend WithEvents Radio_pubed As System.Windows.Forms.RadioButton
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents RadioButton3 As System.Windows.Forms.RadioButton
-    Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
+    Friend WithEvents Radio_onGoing As System.Windows.Forms.RadioButton
+    Friend WithEvents Radio_unpub As System.Windows.Forms.RadioButton
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents TextBox_categ As System.Windows.Forms.TextBox
     Friend WithEvents btn_submit As System.Windows.Forms.Button
@@ -470,12 +470,12 @@ Partial Class Add
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox_advLName As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox_advMid As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox_advFname As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox_advSuff As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents TextBox6 As System.Windows.Forms.TextBox

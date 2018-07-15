@@ -50,7 +50,7 @@ Public Class RunQuery
             isAdded = cmd.ExecuteNonQuery
         Catch ex As Exception
             MessageBox.Show(ex.Message)
-            isAdded = -1
+            isAdded = False
         Finally
             con.Dispose()
         End Try
