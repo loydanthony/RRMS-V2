@@ -38,6 +38,11 @@ Partial Class Add
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.DataGridView_Authour = New System.Windows.Forms.DataGridView()
+        Me.Column_Name = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.col_fname = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.col_mname = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.col_lname = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.col_suff = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btn_add = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -54,11 +59,6 @@ Partial Class Add
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Column_Name = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.col_fname = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.col_mname = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.col_lname = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.col_suff = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -135,7 +135,7 @@ Partial Class Add
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(16, 175)
+        Me.Label1.Location = New System.Drawing.Point(24, 175)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(68, 18)
         Me.Label1.TabIndex = 6
@@ -229,6 +229,37 @@ Partial Class Add
         Me.DataGridView_Authour.Name = "DataGridView_Authour"
         Me.DataGridView_Authour.Size = New System.Drawing.Size(634, 97)
         Me.DataGridView_Authour.TabIndex = 0
+        '
+        'Column_Name
+        '
+        Me.Column_Name.FillWeight = 58.82011!
+        Me.Column_Name.HeaderText = "ID"
+        Me.Column_Name.MaxInputLength = 50
+        Me.Column_Name.Name = "Column_Name"
+        '
+        'col_fname
+        '
+        Me.col_fname.FillWeight = 130.1395!
+        Me.col_fname.HeaderText = "First Name"
+        Me.col_fname.Name = "col_fname"
+        '
+        'col_mname
+        '
+        Me.col_mname.FillWeight = 130.1395!
+        Me.col_mname.HeaderText = "Middle Name"
+        Me.col_mname.Name = "col_mname"
+        '
+        'col_lname
+        '
+        Me.col_lname.FillWeight = 130.1395!
+        Me.col_lname.HeaderText = "Last Name"
+        Me.col_lname.Name = "col_lname"
+        '
+        'col_suff
+        '
+        Me.col_suff.FillWeight = 50.76142!
+        Me.col_suff.HeaderText = "Suffix"
+        Me.col_suff.Name = "col_suff"
         '
         'Panel1
         '
@@ -385,37 +416,6 @@ Partial Class Add
         Me.Label2.Size = New System.Drawing.Size(81, 18)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "First Name"
-        '
-        'Column_Name
-        '
-        Me.Column_Name.FillWeight = 58.82011!
-        Me.Column_Name.HeaderText = "ID"
-        Me.Column_Name.MaxInputLength = 50
-        Me.Column_Name.Name = "Column_Name"
-        '
-        'col_fname
-        '
-        Me.col_fname.FillWeight = 130.1395!
-        Me.col_fname.HeaderText = "First Name"
-        Me.col_fname.Name = "col_fname"
-        '
-        'col_mname
-        '
-        Me.col_mname.FillWeight = 130.1395!
-        Me.col_mname.HeaderText = "Middle Name"
-        Me.col_mname.Name = "col_mname"
-        '
-        'col_lname
-        '
-        Me.col_lname.FillWeight = 130.1395!
-        Me.col_lname.HeaderText = "Last Name"
-        Me.col_lname.Name = "col_lname"
-        '
-        'col_suff
-        '
-        Me.col_suff.FillWeight = 50.76142!
-        Me.col_suff.HeaderText = "Suffix"
-        Me.col_suff.Name = "col_suff"
         '
         'Add
         '
