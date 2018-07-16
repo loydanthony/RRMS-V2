@@ -23,6 +23,10 @@ RRMS
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:RRMS.My.Resources.Resources.thumbs_greenweb">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:RRMS.My.Resources.Resources.Time_Logo">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

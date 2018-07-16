@@ -32,4 +32,9 @@
     Private Sub Panel_WA_Paint(sender As Object, e As PaintEventArgs) Handles Panel_WA.Paint
 
     End Sub
+
+    Private Sub BrowsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BrowsToolStripMenuItem.Click
+        Dim ftpBrowser As New ftpBrowser
+        ftpBrowser.ShowDialog()
+    End Sub
 End Class

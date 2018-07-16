@@ -41,6 +41,10 @@ Partial Class Menu
         Me.PrevilegesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AdministrationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ChangePasswordToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HELPToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ViewHelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripTextBox1 = New System.Windows.Forms.ToolStripTextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.MetroButton1 = New MetroFramework.Controls.MetroButton()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -58,10 +62,6 @@ Partial Class Menu
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Timer_DateNow = New System.Windows.Forms.Timer(Me.components)
         Me.Panel_WA = New System.Windows.Forms.Panel()
-        Me.HELPToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ViewHelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripTextBox1 = New System.Windows.Forms.ToolStripTextBox()
         Me.Panel_Top.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
@@ -197,6 +197,31 @@ Partial Class Menu
         Me.ChangePasswordToolStripMenuItem.Name = "ChangePasswordToolStripMenuItem"
         Me.ChangePasswordToolStripMenuItem.Size = New System.Drawing.Size(193, 24)
         Me.ChangePasswordToolStripMenuItem.Text = "Change Password"
+        '
+        'HELPToolStripMenuItem
+        '
+        Me.HELPToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ViewHelpToolStripMenuItem, Me.ToolStripSeparator1, Me.ToolStripTextBox1})
+        Me.HELPToolStripMenuItem.Name = "HELPToolStripMenuItem"
+        Me.HELPToolStripMenuItem.Size = New System.Drawing.Size(55, 24)
+        Me.HELPToolStripMenuItem.Text = "HELP"
+        '
+        'ViewHelpToolStripMenuItem
+        '
+        Me.ViewHelpToolStripMenuItem.Name = "ViewHelpToolStripMenuItem"
+        Me.ViewHelpToolStripMenuItem.Size = New System.Drawing.Size(160, 24)
+        Me.ViewHelpToolStripMenuItem.Text = "View Help"
+        '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(157, 6)
+        '
+        'ToolStripTextBox1
+        '
+        Me.ToolStripTextBox1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripTextBox1.Name = "ToolStripTextBox1"
+        Me.ToolStripTextBox1.Size = New System.Drawing.Size(100, 27)
+        Me.ToolStripTextBox1.Text = "About "
         '
         'Panel2
         '
@@ -362,31 +387,6 @@ Partial Class Menu
         Me.Panel_WA.Name = "Panel_WA"
         Me.Panel_WA.Size = New System.Drawing.Size(850, 369)
         Me.Panel_WA.TabIndex = 4
-        '
-        'HELPToolStripMenuItem
-        '
-        Me.HELPToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ViewHelpToolStripMenuItem, Me.ToolStripSeparator1, Me.ToolStripTextBox1})
-        Me.HELPToolStripMenuItem.Name = "HELPToolStripMenuItem"
-        Me.HELPToolStripMenuItem.Size = New System.Drawing.Size(55, 24)
-        Me.HELPToolStripMenuItem.Text = "HELP"
-        '
-        'ViewHelpToolStripMenuItem
-        '
-        Me.ViewHelpToolStripMenuItem.Name = "ViewHelpToolStripMenuItem"
-        Me.ViewHelpToolStripMenuItem.Size = New System.Drawing.Size(160, 24)
-        Me.ViewHelpToolStripMenuItem.Text = "View Help"
-        '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(157, 6)
-        '
-        'ToolStripTextBox1
-        '
-        Me.ToolStripTextBox1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ToolStripTextBox1.Name = "ToolStripTextBox1"
-        Me.ToolStripTextBox1.Size = New System.Drawing.Size(100, 27)
-        Me.ToolStripTextBox1.Text = "About "
         '
         'Menu
         '

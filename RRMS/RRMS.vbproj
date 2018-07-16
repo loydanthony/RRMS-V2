@@ -58,10 +58,12 @@
     <Reference Include="MetroFramework.Fonts">
       <HintPath>..\..\..\..\..\..\back up hdd\Documents\Visual Studio 2015\Projects\Attendance\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
@@ -95,7 +97,19 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Authors.vb" />
+    <Compile Include="BookList.Designer.vb">
+      <DependentUpon>BookList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookList.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="db_config.vb" />
+    <Compile Include="ftpBrowser.Designer.vb">
+      <DependentUpon>ftpBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ftpBrowser.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Menu.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +147,12 @@
     <EmbeddedResource Include="AddAuthors.resx">
       <DependentUpon>AddAuthors.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BookList.resx">
+      <DependentUpon>BookList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ftpBrowser.resx">
+      <DependentUpon>ftpBrowser.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.vb</DependentUpon>
     </EmbeddedResource>
@@ -165,6 +185,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Button-Close-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumbs_greenweb.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

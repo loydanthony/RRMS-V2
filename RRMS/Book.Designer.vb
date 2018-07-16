@@ -23,11 +23,10 @@ Partial Class Book
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Book))
-        Me.Panel_WA = New System.Windows.Forms.Panel()
+        Me.Panel_back = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripDropDownButton2 = New System.Windows.Forms.ToolStripDropDownButton()
         Me.AddNewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
@@ -41,22 +40,22 @@ Partial Class Book
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.SubmitRevisionToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
-        Me.Panel_WA.SuspendLayout()
+        Me.Panel_WA = New System.Windows.Forms.Panel()
+        Me.Panel_back.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Panel_WA
+        'Panel_back
         '
-        Me.Panel_WA.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Panel_WA.Controls.Add(Me.DataGridView1)
-        Me.Panel_WA.Controls.Add(Me.Panel1)
-        Me.Panel_WA.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel_WA.Location = New System.Drawing.Point(0, 0)
-        Me.Panel_WA.Name = "Panel_WA"
-        Me.Panel_WA.Size = New System.Drawing.Size(1021, 439)
-        Me.Panel_WA.TabIndex = 0
+        Me.Panel_back.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel_back.Controls.Add(Me.Panel_WA)
+        Me.Panel_back.Controls.Add(Me.Panel1)
+        Me.Panel_back.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel_back.Location = New System.Drawing.Point(0, 0)
+        Me.Panel_back.Name = "Panel_back"
+        Me.Panel_back.Size = New System.Drawing.Size(1021, 439)
+        Me.Panel_back.TabIndex = 0
         '
         'Panel1
         '
@@ -67,26 +66,6 @@ Partial Class Book
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1021, 43)
         Me.Panel1.TabIndex = 2
-        '
-        'ToolStrip1
-        '
-        Me.ToolStrip1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(32, 32)
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripDropDownButton2, Me.ToolStripDropDownButton1, Me.ToolStripButton1})
-        Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(1021, 43)
-        Me.ToolStrip1.TabIndex = 0
-        Me.ToolStrip1.Text = "ToolStrip1"
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DataGridView1.Location = New System.Drawing.Point(0, 43)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(1021, 396)
-        Me.DataGridView1.TabIndex = 3
         '
         'Button1
         '
@@ -100,6 +79,17 @@ Partial Class Book
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "X"
         Me.Button1.UseVisualStyleBackColor = True
+        '
+        'ToolStrip1
+        '
+        Me.ToolStrip1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(32, 32)
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripDropDownButton2, Me.ToolStripDropDownButton1, Me.ToolStripButton1})
+        Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStrip1.Name = "ToolStrip1"
+        Me.ToolStrip1.Size = New System.Drawing.Size(1021, 43)
+        Me.ToolStrip1.TabIndex = 0
+        Me.ToolStrip1.Text = "ToolStrip1"
         '
         'ToolStripDropDownButton2
         '
@@ -192,25 +182,33 @@ Partial Class Book
         Me.ToolStripButton1.Text = "View"
         Me.ToolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
+        'Panel_WA
+        '
+        Me.Panel_WA.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.Panel_WA.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel_WA.Location = New System.Drawing.Point(0, 43)
+        Me.Panel_WA.Name = "Panel_WA"
+        Me.Panel_WA.Size = New System.Drawing.Size(1021, 396)
+        Me.Panel_WA.TabIndex = 3
+        '
         'Book
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1021, 439)
-        Me.Controls.Add(Me.Panel_WA)
+        Me.Controls.Add(Me.Panel_back)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Book"
         Me.Text = "Document"
-        Me.Panel_WA.ResumeLayout(False)
+        Me.Panel_back.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Panel_WA As System.Windows.Forms.Panel
+    Friend WithEvents Panel_back As System.Windows.Forms.Panel
     Friend WithEvents ToolStrip1 As System.Windows.Forms.ToolStrip
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents ToolStripDropDownButton1 As System.Windows.Forms.ToolStripDropDownButton
@@ -226,6 +224,6 @@ Partial Class Book
     Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents SubmitRevisionToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripButton1 As System.Windows.Forms.ToolStripButton
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Panel_WA As System.Windows.Forms.Panel
 End Class
